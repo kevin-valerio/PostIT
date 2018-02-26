@@ -1,3 +1,7 @@
+<?php
+ session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -18,48 +22,33 @@
         <div class="mx-auto col-md-9">
           <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container">
-              <a class="navbar-brand" href="#"><b>PostIT</b></a>
+              <a class="navbar-brand" href="index.php"><b>PostIT</b></a>
               <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span> </button>
               <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="index.html"><b>Accueil</b></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/login.html"><b>Se connecter</b></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/new/"><b>S'enregistrer</b></a>
-                  </li>
-
-                </ul>
+               <?php require_once 'head.php'; ?>
               </div>
             </div>
           </nav>
         </div>
       </div>
     </div>
+
+      <?php
+      if(isConnected()){
+          echo "<h1>YESS Co!</h1>";
+      }
+      else{
+          echo "<h1>Non pas co</h1>";
+      }
+
+      ?>
     <div class="container">
       <div class="row">
-
-          <div class="col-md-8 mx-auto">
-              <h1 class="cover-heading"><b>Connectez vous !</b></h1>
-              <p class="lead">Afin de pouvoir créer et acceder à vos post-it, vous devez vous connecter !</p>
-              <p class="card-text">BETA : Utilisez le couple ("admin", "admin") afin de vous connecter </p>
-           </div>
         <div class="col-md-8 mx-auto">
-            <form method="POST" action="">
-                <div class="form-group my-3">
-                    <div class="input-group">
-                        <div class="input-group-prepend"><span class="input-group-text" id="basic-addon1">@</span></div>
-                        <input type="text" class="form-control" id="mail" placeholder="Adresse mail">
-
-                        <input type="password" style="margin-left: 10px; !important;" class="form-control" id="password" placeholder="Mot de passe">
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary my-2">Se connecter</button>
-            </form>
+          <h1 class="cover-heading"><b>Créer un nouveau PostIT</b></h1>
+          <p class="lead">PostIT est une plateforme vous permettant d'obtenir des post-it virtuels, gratuitement et de façon illimité !.</p>
+          <a href="#" class="btn btn-lg btn-light"><b class="">Créer un post-it</b></a>
         </div>
       </div>
     </div>
@@ -73,7 +62,7 @@
       </div>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>

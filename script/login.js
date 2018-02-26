@@ -1,15 +1,19 @@
 $(document).ready(function() {
-    $("#login_form").submit(function(e){
+     $("#login-form").submit(function(e){
         e.preventDefault();
         $.ajax({
-            url:'check_authentication.php',
+            url:'engine/login.php',
             type:'POST',
-            data: {username:$("#username").val(), password:$("#password").val()},
+            data: {
+                mail:$("#mail").val(),
+                password:$("#password").val()
+            },
             success: function(resp) {
-                if(resp === "invalid") {
-                    $("#errorMsg").html("Invalid username and password!");
+                result = JSON.parse(resp);
+                 if(result.login === false) {
+                    alert("Nn");
                 } else {
-                    window.location.href= resp;
+                    alert("yes");
                 }
             }
         });
