@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5a13b388-a58f-46c3-9386-cc7576653fed" name="Server" url="http://kevinv.alwaysdata.net">
+        <fileTransfer host="ftp-kevinv.alwaysdata.net" port="21" rootFolder="/www/">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
