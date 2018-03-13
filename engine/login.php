@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-const USERNAME = "admin";
-const PASSWORD = "admin";
+const USERNAME = "postit@yopmail.com";
+const PASSWORD = "postit";
 $arr = array('login' => false, 'message' => '');
 
 if(isset($_POST['mail']) && $_POST['mail'] != '' && isset($_POST['password']) && $_POST['password'] != '') {

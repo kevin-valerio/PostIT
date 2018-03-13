@@ -46,11 +46,14 @@ session_start();
     <div class="container">
 
         <div class="row">
+            <h2>Vous pouvez <a style="color: #c69500;" href="#" alt="Cliquez ici pour créer un post-it ! "><b>créer</b></a>, éditer, supprimer ou modifier vos post-it ici !</h2>
             <div class="col-md-8 mx-auto">
 
 
                 <ul class="ul-postit">
                     <li class="li-postit">
+                        <a href="#">Supprimer</a>
+
                         <a class="a-postit">
                             <h2 class="h2-postit">Title #1</h2>
                             <p class="p-postit">Text Content #1</p>

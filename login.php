@@ -43,7 +43,7 @@
             <div class="col-md-8 mx-auto">
                 <h1 class="cover-heading"><b>Connectez vous !</b></h1>
                 <p class="lead">Afin de pouvoir créer et acceder à vos post-it, vous devez vous connecter !</p>
-                <p class="card-text">BETA : Utilisez le couple ("admin", "admin") afin de vous connecter </p>
+                <p class="card-text">BETA : Utilisez le couple ("postit@yopmail.com", "postit") afin de vous connecter </p>
             </div>
             <div class="col-md-8 mx-auto">
                 <form id="login-form" method="POST">
