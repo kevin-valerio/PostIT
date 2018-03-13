@@ -3,7 +3,8 @@
 $arr = array('status' => 'null');
 
 try{
-    session_unset();
+    session_start();
+    session_destroy();
     $arr['status'] =  'success';
 }
 catch(Exception $e){

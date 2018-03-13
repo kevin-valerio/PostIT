@@ -1,13 +1,24 @@
 <?php
+session_start();
 
-function isConnected(){
-    if((isset($_SESSION['sessUsername']) && $_SESSION['sessUsername'] != "") &&
-        (isset($_SESSION['sessPasswd']) && $_SESSION['sessPasswd'] != ""))
+function isConnected($printResult = false){
 
+    if (isset($_SESSION['sessUsername'])){
+
+        if($printResult == true) echo "true";
         return true;
-    else
+    }
+    else {
+
+        if($printResult == true) echo "false";
         return false;
+    }
+}
+if (isset($_SESSION['sessUsername'])){
+    echo "true";
+}
+else {
+    echo "false";
 
 }
-
 ?>

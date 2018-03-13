@@ -24,6 +24,8 @@
                 <nav class="navbar navbar-expand-md navbar-dark">
                     <div class="container">
                         <a class="navbar-brand" href="index.php"><b>PostIT</b></a>
+                        <img id="logo" src="/images/postit.png">
+
                         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -54,7 +56,10 @@
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary my-2">Se connecter</button>
+                    <div id="info">
+                    </div>
                 </form>
+
             </div>
         </div>
     </div>

@@ -1,0 +1,86 @@
+
+.h2-postit{
+  font-size:100%;
+  font-weight:normal;
+}
+
+.p-postit {
+  font-size:100%;
+  font-weight:normal;
+}
+.ul-postit, .li-postit{
+  list-style:none;
+}
+.ul-postit{
+  overflow:hidden;
+  padding:3em;
+}
+.ul-postit .li-postit .a-postit{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:10em;
+  width:10em;
+  padding:1em;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+}
+.ul-postit .li-postit{
+  margin:1em;
+  float:left;
+}
+.ul-postit .li-postit .h2-postit{
+  font-size:140%;
+  font-weight:bold;
+  padding-bottom:10px;
+}
+.ul-postit  .li-postit  .p-postit {
+  font-family:"Reenie Beanie",arial,sans-serif;
+  font-size:180%;
+}
+.ul-postit  .li-postit  .a-postit {
+  -webkit-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+}
+.ul-postit  .li-postit:nth-child(even) .a-postit{
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:#cfc;
+}
+.ul-postit .li-postit:nth-child(3n) .a-postit{
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#ccf;
+}
+.ul-postit .li-postit:nth-child(5n) .a-postit{
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+.ul-postit .li-postit .a-postit:hover,.ul-postit .li-postit .a-postit:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+.ol-postit{text-align:center;}
+.ol-postit .li-postit{display:inline;padding-right:1em;}
+.ol-postit .li-postit .a-postit{color:#fff;}

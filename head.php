@@ -6,27 +6,28 @@
         <a class="nav-link active" href="index.php"><b>Accueil</b></a>
     </li>
 
-    <li class="nav-item">
-        <a class="nav-link" href="/register.php"><b>S'enregistrer</b></a>
-    </li>
 
     <?php
     session_start();
-    require 'engine/utils.php';
+    ob_start();
+    include 'engine/utils.php';
+    ob_end_clean();
+
     if(isConnected()) {
         ?>
         <form method="POST" id="form-logout">
             <li class="nav-item">
-                <a href="javascript:{}" onclick="document.getElementById('form-logout').submit();" class="nav-link" ><b>Se déconnecter</b></a>
+                <a style="cursor: pointer" onclick="logout()" class="nav-link" ><b>Se déconnecter</b></a>
             </li>
         </form>
-
-
     <?php
         }
-        else{
-
+        else {
     ?>
+            <li class="nav-item">
+                <a class="nav-link" href="/register.php"><b>S'enregistrer</b></a>
+            </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="/login.php"><b>Se connecter</b></a>
             </li>
