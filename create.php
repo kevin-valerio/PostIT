@@ -12,8 +12,14 @@ session_start();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="style/wireframe.css">
     <link rel="stylesheet" href="style/postit.css">
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="/script/index.js"></script>
+
+    <script type="text/javascript" src="/script/create.js"></script>
+    <script type="text/javascript" src="/script/postit.js"></script>
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link  href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css">
@@ -43,10 +49,50 @@ session_start();
         <div id="potential-alert" class="alert alert-info"></div>
     </div>
 
-    <div class="container">
+    <div class="container" style="align-content: center;">
+        <form method="post" id="create-div" class="h-100 row align-items-center" style="display: none" >
+            <input id="mail" type="hidden" name="mail" type="text" value="<?php echo $_SESSION['sessUsername']; ?>">
+
+            <!-- Text input-->
+            <div class="col-md-3">
+                <input id="title" name="title" type="text" placeholder="Titre du postit" class="form-control input-left">
+
+            </div>
+            <br>
+            <!-- Textarea -->
+            <div class="col-md-4">
+                <input id="contenu" name="contenu" type="text" placeholder="Contenu du postit" class="form-control input-left">
+            </div>
+            <br>
+            <div class="col-md-3">
+                <input id="date" name="date" type="text" placeholder="Date jj/mm/year " class="form-control input-left">
+            </div>
+            <br>
+            <div class="col-md-2">
+                <input id="heure" name="heure" type="text" placeholder="Heure hh:mm" class="form-control input-left">
+            </div>
+            <!-- Button -->
+            <br><br>
+
+
+                <div class="col-md-12">
+                    <div style="text-align: center;">
+                     <a style="cursor: pointer;" class="btn btn-info" role="button" id="submit" name="submit""><b>Créer</b></a>
+                    </div>
+                </div>
+
+        </form>
+
+
 
         <div class="row">
-            <h2>Vous pouvez <a style="color: #c69500;" href="#" alt="Cliquez ici pour créer un post-it ! "><b>créer</b></a>, éditer, supprimer ou modifier vos post-it ici !</h2>
+
+            <div class="center-block" style="visibility: hidden;margin-top: -15%;">
+                <div id="potential-alert" class="alert alert-info"></div>
+            </div>
+
+
+            <h2>Vous pouvez <a style="color: #c69500;" href="#" id="creer-postit" alt="Cliquez ici pour créer un post-it ! "><b>créer</b></a>, éditer, supprimer ou modifier vos post-it ici !</h2>
             <div class="col-md-8 mx-auto">
 
 
