@@ -28,10 +28,13 @@
 
     $(document).ready(function () {
 
+        $( "#datepicker" ).datepicker();
+
+
         //Création d'un post-it
 
         $("#creer-postit").click(function () {
-            $("#create-div").show();
+            $("#create-div").fadeIn(1000);
             $("#submit").click(function () {
 
 
@@ -50,6 +53,8 @@
                 else {
                     showMessage("error", '<b>Error </b> Une erreure est parvenue');
                 }
+                $("#create-div").fadeOut(1000);
+
             });
         });
 
@@ -76,7 +81,7 @@
                 url: '/engine/delpostit.php',
                 protocol: "GET",
                 data: {
-                    id: $(this).parent().parent().parent().parent().attr('id'), // Second add quotes on the value.
+                    id: $(this).parent().parent().parent().parent().attr('id'),
                 },
 
             });

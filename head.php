@@ -1,5 +1,4 @@
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="script/logout.js"></script>
+ <script type="text/javascript" src="script/logout.js"></script>
 
 <ul class="navbar-nav">
     <li class="nav-item">

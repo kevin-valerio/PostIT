@@ -73,16 +73,12 @@ class PostIt {
             '                        <a class="a-postit">\n<div class="delete-postit">' +
             '<button type="button" class="btn btn-danger btn-sm delete-postit">X</button><h3 class="h3-date">' + date + '</h3></div>' +
             '                            <h2 class="h2-postit">'
-            +
-            title
-            + '</h2>' +
-            '                            <p class="p-postit">'
-            +
-            content
+            +  title+ '</h2>' +' <p class="p-postit">'+  content
             + '</p>' +
             '                        </a>' +
             '                    </li>' +
             '                </ul>');
+
     }
 
     creer(){

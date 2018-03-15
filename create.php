@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +14,8 @@ session_start();
     <link rel="stylesheet" href="style/postit.css">
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <script type="text/javascript" src="/script/create.js"></script>
     <script type="text/javascript" src="/script/postit.js"></script>
@@ -54,26 +55,25 @@ session_start();
         <form method="post" id="create-div" class="h-100 row align-items-center" style="display: none" >
             <input id="mail" type="hidden" name="mail"  value="<?php echo $_SESSION['sessUsername']; ?>">
 
-            <!-- Text input-->
-            <div class="col-md-3">
+             <div class="col-md-3">
                 <input id="title" name="title" type="text" placeholder="Titre du postit" class="form-control input-left">
 
             </div>
             <br>
-            <!-- Textarea -->
-            <div class="col-md-4">
+             <div class="col-md-4">
                 <input id="contenu" name="contenu" type="text" placeholder="Contenu du postit" class="form-control input-left">
             </div>
             <br>
             <div class="col-md-3">
-                <input id="date" name="date" type="text" placeholder="Date jj/mm/year " class="form-control input-left">
+                <input id="datepicker" name="date" type="text" placeholder="Date jj/mm/year " class="form-control input-left">
+
             </div>
             <br>
             <div class="col-md-2">
                 <input id="heure" name="heure" type="text" placeholder="Heure hh:mm" class="form-control input-left">
+
             </div>
-            <!-- Button -->
-            <br><br>
+             <br><br>
 
 
                 <div class="col-md-12">

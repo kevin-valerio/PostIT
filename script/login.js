@@ -4,9 +4,9 @@
 
         let div = document.getElementById(id);
         $(div).css('position', 'relative');
-        for (let iter = 0; iter < 5 ; iter++) {
+        for (let i = 0; i < 5 ; i++) {
             $(div).animate({
-                left: ((iter % 2 === 0 ? 10 : 10 * -1))
+                left: ((i % 2 === 0 ? 10 : 10 * -1))
             }, 100);
         }
         $(div).animate({ left: 0 }, 100);
@@ -36,7 +36,6 @@
                     } else {
 
                         $("#info")
-
                             .html("Vous pouvez retournez à la <b><a href=\"/index.php\">page d'accueil</a></b>")
                             .addClass("border border-success border-top-0 rounded")
                             .css({
