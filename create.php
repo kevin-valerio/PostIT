@@ -88,7 +88,7 @@ session_start();
 
         <div class="row">
 
-            <h2>Vous pouvez <a style="color: #c69500;" href="#" id="creer-postit" alt="Cliquez ici pour créer un post-it ! "><b>créer</b></a>, éditer, supprimer ou modifier vos post-it ici !</h2>
+            <h2 style="margin-left:130px;">Vous pouvez <a style="color: #c69500;" href="#" id="creer-postit" alt="Cliquez ici pour créer un post-it ! "><b>créer</b></a> ou supprimer vos post-it ici !</h2>
             <div id="postit-list" class="col-md-8 mx-auto">
 
                 <!-- Début de l'affichage des post-it

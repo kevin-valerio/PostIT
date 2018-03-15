@@ -13,8 +13,16 @@ class PostIt {
         return this._titre;
     }
 
+    get id() {
+        return this._id;
+    }
+
     set titre(value) {
         this._titre = value;
+    }
+
+    set id(value) {
+        this._id = value;
     }
 
     get contenu() {
@@ -56,22 +64,25 @@ class PostIt {
         this._status = value;
     }
 
-    static ajouter(title, content){
-        $("#postit-list").append(' <ul class="ul-postit">\n' +
-            '                    <li class="li-postit">\n' +
-            '\n' +
-            '                        <a class="a-postit">\n' +
+
+    static ajouter(title, content, date, id){
+
+        $("#postit-list").append(' ' +
+            '<ul id="' + id  + '" class="ul-postit">' +
+            '                    <li class="li-postit">' +
+            '                        <a class="a-postit">\n<div class="delete-postit">' +
+            '<button type="button" class="btn btn-danger btn-sm delete-postit">X</button><h3 class="h3-date">' + date + '</h3></div>' +
             '                            <h2 class="h2-postit">'
             +
             title
-            + '</h2>\n' +
+            + '</h2>' +
             '                            <p class="p-postit">'
             +
             content
-            + '</p>\n' +
-            '                        </a>\n' +
-            '                    </li>\n' +
-            '                </ul>\n');
+            + '</p>' +
+            '                        </a>' +
+            '                    </li>' +
+            '                </ul>');
     }
 
     creer(){

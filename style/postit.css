@@ -43,13 +43,26 @@
 .ul-postit .li-postit .h2-postit{
   font-size:85%;
   font-weight:bold;
-  padding-bottom:10px;
-}
+ }
 .ul-postit  .li-postit  .p-postit {
-  font-family:"Reenie Beanie",arial,sans-serif;
-  font-size: 157%;
+   font-size: 116%;
   line-height: 85%;
 }
+#create-div{
+    margin-top:50px;
+}
+.h3-date{
+    font-size: small;
+}
+
+.delete-postit{
+    margin-top:-10px;
+}
+
+.delete-postit button{
+margin-left: 75%;
+}
+
 .ul-postit  .li-postit  .a-postit {
   -webkit-transform: rotate(-6deg);
   -o-transform: rotate(-6deg);
