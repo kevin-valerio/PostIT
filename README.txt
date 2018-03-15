@@ -10,7 +10,7 @@
 |  Auteur : Kevin VALERIO                                                                                                          |
 |  Groupe : 3a                                                                                                                     |
 |  Lien : http://kevinv.alwaysdata.net/                                                                                            |
-|  Source : https://github.com/kevin->alerio/PostIT                                                                                |
+|  Source : https://github.com/kevinvalerio/PostIT                                                                                |
 |  Identifiants : "postit@yopmail.com", "postit"                                                                                   |
 |  Technologies utilisées : Bootstrap, JQuery UI, JQuery, Ajax, Javascript                                                         |
 |                                                                                                                                  |
