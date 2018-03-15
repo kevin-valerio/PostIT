@@ -45,8 +45,8 @@ session_start();
             </div>
         </div>
     </div>
-    <div class="center-block" style="visibility: hidden;margin-top: -15%;">
-        <div id="potential-alert" class="alert alert-info"></div>
+    <div class="center-block" style="margin-top: 1px;">
+        <div id="potential-alert" style="display: none;" class="alert alert-info"></div>
     </div>
 
     <div class="container" style="align-content: center;">
@@ -87,25 +87,14 @@ session_start();
 
         <div class="row">
 
-            <div class="center-block" style="visibility: hidden;margin-top: -15%;">
-                <div id="potential-alert" class="alert alert-info"></div>
-            </div>
-
-
             <h2>Vous pouvez <a style="color: #c69500;" href="#" id="creer-postit" alt="Cliquez ici pour créer un post-it ! "><b>créer</b></a>, éditer, supprimer ou modifier vos post-it ici !</h2>
-            <div class="col-md-8 mx-auto">
+            <div id="postit-list" class="col-md-8 mx-auto">
+
+                <!-- Début de l'affichage des post-it
 
 
-                <ul class="ul-postit">
-                    <li class="li-postit">
-                        <a href="#">Supprimer</a>
 
-                        <a class="a-postit">
-                            <h2 class="h2-postit">Title #1</h2>
-                            <p class="p-postit">Text Content #1</p>
-                        </a>
-                    </li>
-                </ul>
+                <!-- Fin de l'affichage des post-it-->
 
 
             </div>

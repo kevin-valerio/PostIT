@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+
+
 function isConnected($printResult = false){
 
     if (isset($_SESSION['sessUsername'])){
