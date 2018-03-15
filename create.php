@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 ?>
 
 <!DOCTYPE html>
@@ -45,13 +46,13 @@ session_start();
             </div>
         </div>
     </div>
-    <div class="center-block" style="margin-top: 1px;">
-        <div id="potential-alert" style="display: none;" class="alert alert-info"></div>
+    <div class="center-block" style="visibility: hidden;margin-top: -15%;">
+        <div id="potential-alert" class="alert alert-info"></div>
     </div>
 
     <div class="container" style="align-content: center;">
         <form method="post" id="create-div" class="h-100 row align-items-center" style="display: none" >
-            <input id="mail" type="hidden" name="mail" type="text" value="<?php echo $_SESSION['sessUsername']; ?>">
+            <input id="mail" type="hidden" name="mail"  value="<?php echo $_SESSION['sessUsername']; ?>">
 
             <!-- Text input-->
             <div class="col-md-3">
