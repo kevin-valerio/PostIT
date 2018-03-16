@@ -23,7 +23,7 @@
                     password: $("#password").val()
                 },
                 success: function (resp) {
-                    result = JSON.parse(resp);
+                    let result = JSON.parse(resp);
                     if (result.login === false) {
                         moveCaseWrongPassword("info");
                         $("#info").html("Les identifiants rentrés sont faux !")
